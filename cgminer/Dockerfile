@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:buster AS build-stage
+FROM debian:bookworm-slim AS build-stage
 
 MAINTAINER Ivo Smid <ivo.smid@gmail.com>
 
@@ -41,7 +41,7 @@ RUN ./autogen.sh \
 
 # ------------------------------------------------ RUN ------------------------------------------------
 
-FROM resin/rpi-raspbian:buster
+FROM debian:bookworm-slim
 
 ENV TERM linux
 ENV POOL_URL stratum+tcp://de.ckpool.org:443
