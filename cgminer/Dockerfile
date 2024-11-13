@@ -19,6 +19,7 @@ RUN apt-get update \
      automake \
      make \
      build-essential \
+     ca-certificates \
      # dependencies
      libcurl4-openssl-dev \
      libncurses5-dev \
