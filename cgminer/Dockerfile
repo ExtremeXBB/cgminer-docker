@@ -33,7 +33,7 @@ RUN git clone https://github.com/ckolivas/cgminer.git /opt/cgminer-build
 WORKDIR /opt/cgminer-build
 
 RUN ./autogen.sh \
- && CFLAGS="-O2 -Wall -march=native" ./configure \
+ && CFLAGS="-O2 -Wall -march=native -fcommon" ./configure \
  && make
 
 # ------------------------------------------------ RUN ------------------------------------------------
