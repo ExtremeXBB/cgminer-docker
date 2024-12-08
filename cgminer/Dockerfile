@@ -2,11 +2,6 @@ FROM debian:bookworm-slim AS build-stage
 
 MAINTAINER Ivo Smid <ivo.smid@gmail.com>
 
-# Created for
-# Raspberry Pi 3 Model B Rev 1.2
-# Raspbian GNU/Linux 10 (buster)
-# ckpool.org
-
 RUN apt-get update \
  && apt-get install -y apt-transport-https \
  && apt-get install -y --no-install-recommends \
