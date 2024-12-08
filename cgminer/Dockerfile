@@ -22,6 +22,7 @@ RUN apt-get update \
      libudev-dev \
      uthash-dev \
      libjansson-dev \
+     zlib1g-dev \
  && rm -rf /var/lib/apt/lists/* \
  && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
 
