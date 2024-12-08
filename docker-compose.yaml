@@ -5,6 +5,8 @@ services:
     restart: always
     build:
       context: ./cgminer
+      args:
+        BUILD_OPTIONS: --enable-icarus
     ports:
       - 4028:4028
     privileged: true
