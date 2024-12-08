@@ -27,12 +27,12 @@ RUN apt-get update \
 
 RUN mkdir -p /opt/cgminer-build
 
-RUN git clone https://github.com/vthoang/cgminer.git /opt/cgminer-build
+RUN git clone https://github.com/ckolivas/cgminer.git /opt/cgminer-build
 
 WORKDIR /opt/cgminer-build
 
 RUN ./autogen.sh \
- && CFLAGS="-O2 -Wall -march=native" ./configure --enable-gekko \
+ && CFLAGS="-O2 -Wall -march=native" ./configure \
  && make
 
 # ------------------------------------------------ RUN ------------------------------------------------
